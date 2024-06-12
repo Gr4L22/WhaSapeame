@@ -1,0 +1,19 @@
+# Archivos y carpetas generados automáticamente
+node_modules/
+.cache/
+*.log
+npm-debug.log*
+package-lock.json
+
+# Dependencias específicas de tu entorno de desarrollo
+.env
+.DS_Store
+
+# Dependencias específicas de tu editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de configuración local
+config.js

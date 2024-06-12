@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e5ddd5;
+}
+
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    color: #075e54;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #075e54;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #25d366;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #25d366;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+.checkbox-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox-container input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-container label {
+    position: relative;
+    display: inline-block;
+    padding-left: 25px; /* Espacio para el checkbox */
+    cursor: pointer;
+    font-size: 1.2em; /* Tamaño de la fuente del label */
+}
+
+.checkbox-container label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px; /* Tamaño del checkbox */
+    height: 20px; /* Tamaño del checkbox */
+    border: 2px solid #333; /* Color del borde del checkbox */
+    background-color: #fff; /* Color de fondo del checkbox */
+    border-radius: 4px; /* Borde redondeado */
+}
+
+.checkbox-container input[type="checkbox"]:checked + label::before {
+    background-color: #333; /* Color de fondo cuando está seleccionado */
+}
+
+/* Oculta el textarea si el checkbox no está seleccionado */
+#custom-message-container {
+    display: none;
+}
+
+/* Muestra el textarea cuando el checkbox está seleccionado */
+#send-message-checkbox:checked ~ #custom-message-container {
+    display: block;
+}
+
+/* Estilos para el textarea */
+#custom-message {
+    width: 100%;
+    height: 100px;
+    resize: vertical; /* Permite redimensionar verticalmente */
+}

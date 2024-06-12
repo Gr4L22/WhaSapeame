@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enviador de mensajes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="../assets/wapp_blue.png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Enviador de mensajes</h1>
+      <label for="country-select">Seleccione el país:</label>
+      <select id="country-select">
+        <!-- Options will be populated by JavaScript -->
+      </select>
+      <br /><br />
+      <label for="phone-number">Ahora el número:</label>
+      <input type="text" id="phone-number" placeholder="Ahora el número" />
+      <br /><br />
+      <div class="checkbox-container">
+        <input type="checkbox" id="send-message-checkbox">
+        <label for="send-message-checkbox">Enviar mensaje</label>
+    </div>
+      <div id="custom-message-container" style="display: none">
+        <label for="language-select"
+          >Seleccione el lenguaje para traducir:</label
+        >
+        <select id="language-select">
+          <option value="en">Inglés</option>
+          <option value="fr">Frances</option>
+          <option value="de">Aleman</option>
+          <!-- Agrega más opciones según los idiomas que desees -->
+        </select>
+        <br /><br />
+        <label for="custom-message">Mensaje personalizado:</label>
+        <label for="custom-message">Aca el mensaje:</label>
+        <textarea
+          id="custom-message"
+          placeholder="Aca el mensaje"
+          rows="4"
+        ></textarea>
+        <br /><br />
+      </div>
+
+      <a id="whatsapp-link" href="#" target="_blank" class="whatsapp-button"
+        >Enviar por WhatsApp</a
+      >
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
