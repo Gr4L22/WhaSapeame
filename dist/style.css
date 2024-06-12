@@ -1,3 +1,29 @@
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 400px;
+        padding: 10px;
+    }
+
+    input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -62,6 +88,7 @@ textarea {
 .whatsapp-button:hover {
     background-color: #128c7e;
 }
+
 .checkbox-container {
     display: inline-block;
     vertical-align: middle;
