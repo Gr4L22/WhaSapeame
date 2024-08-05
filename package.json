@@ -1,5 +1,5 @@
 {
-  "name": "mi-aplicacion",
+  "name": "WhaSapeame",
   "version": "1.0.0",
   "description": "Mi aplicación sin traducción",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "start": "webpack serve --mode development",
     "build": "webpack --mode production"
   },
-  "author": "Tu Nombre",
+  "author": "Uriel Marinzalda",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.16.0",
@@ -20,7 +20,6 @@
     "webpack-dev-server": "^4.7.3"
   },
   "dependencies": {
-    "country-data": "^1.0.0",
     "fs-extra": "^10.0.0"
   }
 }

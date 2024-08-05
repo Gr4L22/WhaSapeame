@@ -6,6 +6,7 @@
     <title>WhaSapeame</title>
     <link rel="stylesheet" href="dist/style.css" />
     <link rel="icon" type="image/png" href="assets/wapp_blue.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
   </head>
   <body>
     <div class="container">
@@ -24,28 +25,20 @@
       </div>
       <br /><br />
       <div id="custom-message-container" style="display: none">
-        <label for="language-select"
-          >Seleccione el lenguaje para traducir:</label
-        >
+        <label for="language-select">Seleccione el lenguaje para traducir:</label>
         <select id="language-select">
           <option value="en">Inglés</option>
-          <option value="fr">Frances</option>
-          <option value="de">Aleman</option>
+          <option value="fr">Francés</option>
+          <option value="de">Alemán</option>
+          <option value="it">Italiano</option>
           <!-- Agrega más opciones según los idiomas que desees -->
         </select>
         <br /><br />
         <label for="custom-message">Aca el mensaje:</label>
-        <textarea
-          id="custom-message"
-          placeholder="Este ensaje se enviará traducido"
-          rows="4"
-        ></textarea>
+        <textarea id="custom-message" placeholder="Este mensaje se enviará traducido" rows="4"></textarea>
         <br /><br />
       </div>
-
-      <a id="whatsapp-link" href="#" target="_blank" class="whatsapp-button"
-        >Enviar por WhatsApp</a
-      >
+      <a id="whatsapp-link" href="#" target="_blank" class="whatsapp-button">Enviar por WhatsApp</a>
     </div>
     <script src="dist/bundle.js"></script>
   </body>

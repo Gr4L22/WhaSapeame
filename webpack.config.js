@@ -25,7 +25,11 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: './dist',
+    static: {
+      directory: path.join(__dirname, 'dist'), // Carpeta que contiene los archivos estáticos
+    },
+    compress: true,
+    port: 8080,
   },
   mode: 'development',
 };
